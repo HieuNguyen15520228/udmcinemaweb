@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Font và padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    font-size: 40px;
+    text-align: center;
+    background: black;
+}
+/* Chia cột */
+
+/* Trái */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Phải */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Placeholder cho những phần trống/chưa có thông tin */
+.placeholder {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Cho từng bài */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Làm mờ nền bài viết/Cho thấy background: Chưa hoạt động*/
+/*#blur
+{
+    opacity: 0.8;
+}*/
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;*/
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+}
+
+/**/
+/* Navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar link */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Đổi màu khi hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
